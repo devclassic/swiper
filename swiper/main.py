@@ -5,8 +5,10 @@ import uuid
 
 os.path.exists("./data/images") or os.makedirs("./data/images")
 
+basepath = os.path.abspath(".")
+ui = os.path.join(basepath, "data", "index.html")
 
-window = webview.create_window("端点轮播", "data/index.html", width=800, height=600)
+window = webview.create_window("端点轮播", ui, width=800, height=600)
 
 
 def fullscreen():
