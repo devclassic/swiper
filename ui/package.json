@@ -8,6 +8,9 @@
     "build": "vite build"
   },
   "dependencies": {
+    "@vueuse/core": "^13.2.0",
+    "element-plus": "^2.9.11",
+    "swiper": "^11.2.8",
     "vue": "^3.5.14"
   },
   "devDependencies": {
