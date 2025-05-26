@@ -6,9 +6,7 @@ import uuid
 os.path.exists("./data/images") or os.makedirs("./data/images")
 
 
-window = webview.create_window(
-    "端点轮播", "http://localhost:5173", width=800, height=600
-)
+window = webview.create_window("端点轮播", "data/index.html", width=800, height=600)
 
 
 def fullscreen():

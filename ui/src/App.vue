@@ -120,6 +120,9 @@
     await pywebview.api.saveconfig(JSON.stringify(state.data))
     ElMessage.success('保存成功')
     state.showSettings = false
+    setTimeout(() => {
+      location.reload()
+    }, 500)
   }
 </script>
 
