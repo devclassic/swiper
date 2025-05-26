@@ -18,7 +18,7 @@
       <el-button type="primary" @click="listItemAdd">添加图片</el-button>
       <el-button type="primary" @click="listItemSort">更新排序</el-button>
     </div>
-    <el-table :data="state.data.images" border style="width: 100%">
+    <el-table :data="state.data.images" border empty-text="暂无图片">
       <el-table-column label="图片" width="125">
         <template #default="scope">
           <img :src="scope.row.url" class="list-img" />
